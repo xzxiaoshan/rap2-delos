@@ -1,21 +1,31 @@
 # rap2-delos
+
 阿里rap2-delos
 
 ### 一、手工创建数据库
 
 手工创建数据库：rap2_delos_app
+
 字符集：utf8 -- UTF-8 Unicode
+
 排序规则：utf8_general_ci
 
 ### 二、启动docker
 
-环境变量说明：
+**环境变量说明：**
+
 MYSQL_URL  数据库的Host
+
 MYSQL_PORT  数据库的端口
+
 MYSQL_USERNAME  数据库登录名
+
 MYSQL_PASSWD  数据库登录密码
+
 MYSQL_SCHEMA  数据库名称(手工创建)
+
 REDIS_URL  Redis的Host
+
 REDIS_PORT  Redis的端口
 
 启动docker命令
