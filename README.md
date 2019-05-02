@@ -1,13 +1,13 @@
 # rap2-delos
 阿里rap2-delos
 
-# 一、手工创建数据库
+### 一、手工创建数据库
 
 手工创建数据库：rap2_delos_app
 字符集：utf8 -- UTF-8 Unicode
 排序规则：utf8_general_ci
 
-# 二、启动docker
+### 二、启动docker
 
 环境变量说明：
 MYSQL_URL  数据库的Host
@@ -23,7 +23,7 @@ REDIS_PORT  Redis的端口
 docker run -itd -name xzxiaoshan-rap2-delos -e TZ='Asia/Shanghai' -e MYSQL_URL='192.168.20.16' -e MYSQL_PORT='3306' -e MYSQL_USERNAME='root' -e MYSQL_PASSWD='123456' -e MYSQL_SCHEMA='rap2_delos_app' -e REDIS_URL='192.168.20.11' -e REDIS_PORT='6379' -p 8083:8080 xzxiaoshan/rap2-delos:latest 
 ```
 
-# 三、确认是否启动成功
+### 三、确认是否启动成功
 
 查看docker启动日志
 ```
@@ -44,7 +44,7 @@ docker logs xzxiaoshan-rap2-delos
 ```
 然后访问 http://192.168.20.50:8083 可看到提示。
 
-# 四、初始化数据库
+### 四、初始化数据库
 
 进入docker然后初始化数据库
 ```
