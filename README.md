@@ -59,9 +59,9 @@ docker logs xzxiaoshan-rap2-delos
 进入docker然后初始化数据库
 ```
 # 进入docker容器
-docker exec -it xzxiaoshan-rap2-delos /bin/sh
+[root@localhost rap2-dolores]# docker exec -it xzxiaoshan-rap2-delos /bin/sh
 # 初始化数据库
-npm run create-db
+/app/rap2-delos # npm run create-db
 ```
 然后查看MYSQL的数据库中，确认数据库表是否初始化完成。
 
