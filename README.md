@@ -30,7 +30,7 @@ REDIS_PORT  Redis的端口
 
 **启动docker命令**
 ```
-docker run -itd -name xzxiaoshan-rap2-delos -e TZ='Asia/Shanghai' -e MYSQL_URL='192.168.20.16' -e MYSQL_PORT='3306' -e MYSQL_USERNAME='root' -e MYSQL_PASSWD='123456' -e MYSQL_SCHEMA='rap2_delos_app' -e REDIS_URL='192.168.20.11' -e REDIS_PORT='6379' -p 8083:8080 xzxiaoshan/rap2-delos:latest 
+docker run -itd --name xzxiaoshan-rap2-delos -e TZ='Asia/Shanghai' -e MYSQL_URL='192.168.20.16' -e MYSQL_PORT='3306' -e MYSQL_USERNAME='root' -e MYSQL_PASSWD='123456' -e MYSQL_SCHEMA='rap2_delos_app' -e REDIS_URL='192.168.20.11' -e REDIS_PORT='6379' -p 8083:8080 xzxiaoshan/rap2-delos:latest 
 ```
 
 ### 三、确认是否启动成功
